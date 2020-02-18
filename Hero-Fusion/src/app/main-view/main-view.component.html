@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+            <div class="nav flex-column align-items-center">
+                <h1 class="h2 mt-3">Hero Fusion</h1>
+            </div>
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['dashboard']"><i
+                                class="fas fa-chart-area mr-2"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['search']"><i
+                                class="fas fa-list mr-2"></i>Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['fusion']"><i
+                                class="fas fa-universal-access mr-2"></i>Fusion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['about']"><i
+                                class="fas fa-info-circle mr-2"></i>About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>
