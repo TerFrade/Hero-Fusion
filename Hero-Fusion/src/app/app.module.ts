@@ -14,6 +14,10 @@ import { FusionComponent } from './main-view/fusion/fusion.component';
 import { AboutViewComponent } from './main-view/about-view/about-view.component';
 
 
+//Services
+import { DatahandlerService } from './services/datahandler.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +33,7 @@ import { AboutViewComponent } from './main-view/about-view/about-view.component'
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes)
   ],
-  providers: [],
+  providers: [DatahandlerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

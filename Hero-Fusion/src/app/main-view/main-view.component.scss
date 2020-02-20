@@ -25,7 +25,6 @@
   }
   
   .sidebar .nav-link {
-    font-weight: 500;
     color: $white;
   }
   
@@ -33,27 +32,13 @@
     margin-right: 4px;
     color: #999;
   }
-  
-  .sidebar .nav-link.active {
-    color: $blue-500;
-  }
-  
-  .sidebar .nav-link:hover .feather,
-  .sidebar .nav-link.active .feather {
-    color: inherit;
-  }
-  
-  .sidebar-heading {
-    font-size: .75rem;
-    text-transform: uppercase;
-  }
 
   a:hover{
-    color: $black !important;
-    background-color: $orange-500;
+    border: 1px solid $orange-500;
   }
   
   .active{
+    font-weight: bold;
     color: $black !important;
     background-color: $orange-500;
   }

@@ -12,3 +12,8 @@ $theme-colors: (
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+body{
+    color: $black;
+    background-color: $gray-100;
+}
