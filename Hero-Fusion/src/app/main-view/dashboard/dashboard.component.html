@@ -13,7 +13,7 @@
                         <div>
                             <h5>Marvel</h5>
                         </div>
-                        <div>{{totalMarvelChars}} Heroes</div>
+                        <div>{{totalMarvelChars}} Characters</div>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                         <div>
                             <h5>DC</h5>
                         </div>
-                        <div>{{totalDcChars}} Heroes</div>
+                        <div>{{totalDcChars}} Characters</div>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                         <div>
                             <h5>Other</h5>
                         </div>
-                        <div>{{totalOtherChars}} Heroes</div>
+                        <div>{{totalOtherChars}} Characters</div>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                         <div>
                             <h5>Good</h5>
                         </div>
-                        <div>{{totalGoodChars}} Heroes</div>
+                        <div>{{totalGoodChars}} Characters</div>
                     </div>
                 </div>
             </div>
@@ -81,10 +81,23 @@
                         <div>
                             <h5>Bad</h5>
                         </div>
-                        <div>{{totalBadChars}} Heroes</div>
+                        <div>{{totalBadChars}} Characters</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center pb-2">
+    <div class="card border-0 mb-4 shadow-sm">
+        <div class="card-body">
+            <canvas baseChart [datasets]="barChartData" [options]="barChartOptions" [labels]="barChartLabels"
+                [colors]="barChartColor" [chartType]="barChartType">
+            </canvas>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; Company 2017-2019</p>
+</footer>

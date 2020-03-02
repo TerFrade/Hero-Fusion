@@ -19,4 +19,8 @@ export class DatahandlerService {
   getHeroesOfAlignment(alignment: string) {
     return this.heroes.filter(x => x.Alignment == alignment);
   }
+
+  getUniverseOfHeroes() {
+    return [...new Set(this.heroes.map(x => x.Universe))];
+  }
 }

@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ChartsModule } from 'ng2-charts';
 import { AppRoutes } from './app.routes';
 
 //Views
@@ -31,6 +32,7 @@ import { DatahandlerService } from './services/datahandler.service';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    ChartsModule,
     RouterModule.forRoot(AppRoutes)
   ],
   providers: [DatahandlerService],
